@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gem "active_record_union"
 gem "base32"
-gem "devise"
+gem "devise", ">= 4.7.1"
 gem "font-awesome-rails"
 gem "grape"
 gem "grape-entity"
@@ -13,23 +13,23 @@ gem "grape-swagger-entity"
 gem "gravatar_image_tag"
 gem "hashie-forbidden_attributes"
 gem "jwt"
-gem "kaminari"
+gem "kaminari", ">= 1.2.1"
 gem "net-ldap"
-gem "omniauth-github"
-gem "omniauth-gitlab"
-gem "omniauth-google-oauth2"
-gem "omniauth-openid"
-gem "omniauth_openid_connect"
+gem "omniauth-github", ">= 2.0.0"
+gem "omniauth-gitlab", ">= 3.0.0"
+gem "omniauth-google-oauth2", ">= 0.7.0"
+gem "omniauth-openid", ">= 2.0.1"
+gem "omniauth_openid_connect", ">= 0.4.0"
 gem "public_activity", "~> 1.6.3"
 gem "pundit"
-gem "rails", "~> 5.2.0"
-gem "redcarpet"
+gem "rails", "~> 6.1.7", ">= 6.1.7.3"
+gem "redcarpet", ">= 3.5.1"
 gem "sassc-rails"
 gem "search_cop"
 gem "slim"
 gem "webpack-rails"
 
-gem "rack-cors"
+gem "rack-cors", ">= 1.0.5"
 
 # Supported DBs
 gem "mysql2", group: :db
@@ -43,7 +43,7 @@ gem "typhoeus"
 gem "bcrypt"
 
 # If the deployment is done through Puma, include it in the bundle.
-gem "puma"
+gem "puma", ">= 5.6.7"
 
 # Configuration management
 gem "cconfig", "~> 1.2.0"
@@ -100,13 +100,13 @@ group :test do
   gem "capybara"
   gem "capybara-screenshot"
   gem "chromedriver-helper"
-  gem "docker-api"
+  gem "docker-api", ">= 2.0.0"
   gem "json-schema"
   gem "poltergeist", require: false
   gem "rails-controller-testing"
-  gem "selenium-webdriver"
+  gem "selenium-webdriver", ">= 3.142.0"
   gem "shoulda"
-  gem "simplecov", require: false
+  gem "simplecov", ">= 0.17.0", require: false
   gem "timecop"
   gem "vcr"
   gem "webmock", require: false
